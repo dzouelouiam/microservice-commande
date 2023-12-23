@@ -8,12 +8,11 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties("microservice-commande")
 @RefreshScope
 public class ApplicationPropertiesConfiguration {
-    // correspond à la propriété « mes-configs.limitDeProduits » dans le fichier de configuration du MS
     private int limitDeCommandes;
-    public int getLimitDeProduits() {
+    public int getLimitDeCommandes() {
         return limitDeCommandes;
     }
-    public void setLimitDeProduits(int limitDeProduits) {
-        this.limitDeCommandes = limitDeProduits;
+    public void setLimitDeCommandes(int limitDeCommandes) {
+        this.limitDeCommandes = limitDeCommandes;
     }
 }
