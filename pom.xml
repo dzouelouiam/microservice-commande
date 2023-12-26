@@ -69,6 +69,13 @@
 		</dependency>
 
 
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
+
+
+
 	</dependencies>
 
 	<dependencyManagement>
@@ -100,16 +107,5 @@
 		</plugins>
 	</build>
 
-
-	<repositories>
-		<repository>
-			<id>spring-Config</id>
-			<name>Spring Config</name>
-			<url>https://github.com/dzouelouiam/mes-config-ms.commandes.git</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
 
 </project>

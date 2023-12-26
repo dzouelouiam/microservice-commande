@@ -8,6 +8,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @SpringBootApplication
 @EnableConfigurationProperties
 @EnableDiscoveryClient
+
 public class DemoApplication {
 
 	public static void main(String[] args) {

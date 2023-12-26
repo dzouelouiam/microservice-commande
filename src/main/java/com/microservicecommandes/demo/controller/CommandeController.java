@@ -12,6 +12,10 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
 @RestController
 @RequestMapping("/commandes")
 public class CommandeController implements HealthIndicator {
@@ -19,10 +23,13 @@ public class CommandeController implements HealthIndicator {
     @Autowired
     private CommandeService commandeService;
 
+
+
     @GetMapping
     public String getAllCommandes() {
         return "commandeService.getAllCommandes()";
     }
+
 
     @GetMapping("/{id}")
     public ResponseEntity<Commande> getCommandeById(@PathVariable Long id) {
@@ -60,5 +67,7 @@ public class CommandeController implements HealthIndicator {
         }
         return Health.up().build();
     }
+
+
 }
 
